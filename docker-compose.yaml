@@ -19,7 +19,7 @@ services:
       AWS_PROFILE: default 
       AWS_BUCKET: cd0354-bucket
       JWT_SECRET: testing
-      URL: "http://localhost:8080"
+      URL: "http://a694a06487ecf4e8a9bcf7dfc5b2b818-1741037734.us-east-1.elb.amazonaws.com:8080/api/v0"
   backend-feed:
     image: udagram-api-feed
     volumes:
@@ -33,7 +33,7 @@ services:
       AWS_PROFILE: default 
       AWS_BUCKET: cd0354-bucket
       JWT_SECRET: testing
-      URL: "http://localhost:8080"
+      URL: "http://a694a06487ecf4e8a9bcf7dfc5b2b818-1741037734.us-east-1.elb.amazonaws.com:8080/api/v0"
   frontend:
     image: udagram-frontend:local
     ports:
